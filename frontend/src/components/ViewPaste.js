@@ -11,7 +11,7 @@ const ViewPaste = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [expiresIn, setExpiresIn] = useState(null);
-//   const [viewsLeft, setViewsLeft] = useState(null);
+
 
   useEffect(() => {
     const fetchPaste = async () => {
@@ -29,9 +29,7 @@ const ViewPaste = () => {
 
         setContent(data.content);
 
-        // views left
-        // setViewsLeft(data.remaining_views);
-
+      
         // expiry time
         if (data.expires_at) {
           const diffSeconds = Math.max(
