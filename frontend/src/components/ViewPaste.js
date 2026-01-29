@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ViewPaste.css";
+import BASEURL from "../constant/Baseurl"
+
 
 const ViewPaste = () => {
   const { id } = useParams();
@@ -15,7 +17,7 @@ const ViewPaste = () => {
     const fetchPaste = async () => {
       try {
         const res = await fetch(
-          `http://localhost:8000/api/pastes/${id}`
+          `${BASEURL}/api/pastes/${id}`
         );
 
         if (!res.ok) {
