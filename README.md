@@ -50,7 +50,7 @@ MongoDB Atlas – Cloud-hosted NoSQL database
 
 Mongoose – MongoDB object modeling layer
 
-📦 Persistence Layer
+## 📦 Persistence Layer
 
 MongoDB Atlas (Cloud-hosted MongoDB)
 
@@ -64,7 +64,8 @@ Serverless-friendly, ideal for cloud hosting platforms
 
 Stable testing environment, ensuring consistent automated test results
 
-⚙️ Environment Variables
+
+## ⚙️ Environment Variables
 Backend (backend/.env)
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
@@ -136,7 +137,7 @@ GET /api/pastes/:id
 View Paste (HTML)
 GET /p/:id
 
-🧠 Architectural & Design Considerations
+## 🧠 Architectural & Design Considerations
 
 Short ID–based access
 Pastes are referenced using compact identifiers for clean and shareable URLs.
@@ -153,7 +154,8 @@ All HTML output is escaped to prevent XSS vulnerabilities.
 Clear API/UI separation
 Backend logic and frontend presentation are fully decoupled, improving maintainability and testability.
 
-✅ Assignment Coverage
+
+## ✅ Assignment Coverage
 
 ✔ Persistent storage
 ✔ Deterministic time-based testing
@@ -162,7 +164,8 @@ Backend logic and frontend presentation are fully decoupled, improving maintaina
 ✔ Secure output rendering
 ✔ Cloud & serverless deployment compatibility
 
-🧪 Automated Test Readiness
+
+## 🧪 Automated Test Readiness
 
 The application is structured to reliably pass automated evaluation checks, including:
 
