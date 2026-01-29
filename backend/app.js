@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://pastebinlite-taupe.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
   })
