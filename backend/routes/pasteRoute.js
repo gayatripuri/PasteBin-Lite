@@ -39,7 +39,7 @@ router.post("/pastes", async (req, res) => {
 
   res.status(201).json({
     id: paste._id.toString(),
-    url: `${req.protocol}://${req.get("host")}/p/${paste._id}`
+    url: `/${paste._id}`
   });
 });
 
