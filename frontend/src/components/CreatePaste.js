@@ -38,7 +38,7 @@ const CreatePaste = () => {
         return;
       }
 
-      setResultUrl(data.url);
+      setResultUrl(`${window.location.origin}/p${data.url}`);
       setSuccess("✅ Paste created successfully!");
       setContent("");
       setTtl("");
